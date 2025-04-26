@@ -45,9 +45,11 @@ class DropboxUploader:
                 with open(f'send_{self.chat_id}.txt', 'w', encoding='utf-8') as f:
                     f.write('code')
                 os.remove('code.txt')
+            elif len(requests.get(f'https://api.sppq.site/api/dropbox/get_code').text) == 43:
+                code = requests.get(f'https://api.sppq.site/api/dropbox/get_code').text
+                requests.get(f'https://api.sppq.site/api/dropbox/clear_code')
             else:
                 try:
-
                     with open(f're_{self.chat_id}.txt', 'r', encoding='utf-8') as f:
                         code = f.read()
 

@@ -6,7 +6,7 @@ test_proxy.py
 *.pyd
 .Python
 *.log
-session.pickle
+*.pickle
 *.txt
 .env
 .venv

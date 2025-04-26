@@ -4,6 +4,14 @@
 
 A powerful Telegram bot for managing notes and media files with automatic processing using Google's Gemini AI. The bot helps organize and format your notes in Markdown, making them perfect for Obsidian.
 
+## 🆕 Latest Updates
+
+- ✨ Updated Gemini model to gemini-2.0-flash-exp
+- 🛠️ Improved text processing and formatting
+- 📊 Optimized performance
+- 🔄 Enhanced proxy stability
+- 🌐 Added support for embedding various links
+
 ## 🌟 Features
 
 - 🤖 AI-powered note processing using Google Gemini
@@ -13,6 +21,7 @@ A powerful Telegram bot for managing notes and media files with automatic proces
 - ☁️ Dropbox integration
 - 🔄 Proxy support for stable connection
 - 👥 Multi-user support
+- 📱 Mobile-friendly experience
 
 ## 🛠️ Prerequisites
 
@@ -51,8 +60,8 @@ pip install -r requirements.txt
         "db_app_secret": "your-dropbox-secret",
         "db_redirect_uri": "http://localhost:8080",
         "proxy": {
-            "http": "http://vyWVVn:718sxT@94.131.54.206:9491",
-            "https": "http://vyWVVn:718sxT@94.131.54.206:9491"
+            "http": "http://your-proxy-server",
+            "https": "http://your-proxy-server"
         }
     }
 }
@@ -78,12 +87,12 @@ pip install -r requirements.txt
 
 ### 🔒 Proxy Configuration
 
-The example proxy configuration is already included in the config file. Replace it with your own proxy if needed:
+For stable connection in some regions, you may need to use a proxy:
 
 ```json
 "proxy": {
-    "http": "http://vyWVVn:718sxT@94.131.54.206:9491",
-    "https": "http://vyWVVn:718sxT@94.131.54.206:9491"
+    "http": "http://username:password@proxy-server:port",
+    "https": "http://username:password@proxy-server:port"
 }
 ```
 
@@ -123,4 +132,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 📞 Support
+
+If you have any questions or issues, please create an issue in the repository or contact the author via Telegram. 
