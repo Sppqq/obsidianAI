@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/sppq/Рабочий стол/obsidian/main.py", line 6, in <module>
+    import telebot
+ModuleNotFoundError: No module named 'telebot'
+Traceback (most recent call last):
+  File "/home/sppq/Рабочий стол/obsidian/main.py", line 6, in <module>
+    import telebot
+ModuleNotFoundError: No module named 'telebot'

@@ -414,7 +414,11 @@ def check_send_file():
                 print(f"Error checking send file for user {chat_id}: {e}")
         time.sleep(1)
 
-subprocess.Popen(['python', 'pooling.py'])
+venv_python = os.path.join("venv", "bin", "python3")
+if os.path.exists(venv_python):
+    subprocess.Popen([venv_python, 'pooling.py'])
+else:
+    print('venv не найден')
 log_info('Запущен скрипт pooling.py')
 import threading
 threading.Thread(target=check_send_file, daemon=True).start()
